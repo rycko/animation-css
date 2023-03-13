@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+.night{
+	width: 70vw;
+	height: 80vh;
+	position: relative;
+	border: 1px solid black;
+	margin: 5rem auto;
+	overflow-x: hidden;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+	background-image: url('./assets/Img_1.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.surface{
+	width: 500%;
+	height: 140px;
+	background: url('./assets/Img_02.png');
+	position: absolute;
+	background-repeat: repeat-x;
+	bottom: 0px;
+	left: 0px;
+	animation: road 6s linear infinite;
+}
+.car{
+	position: absolute;
+	bottom: 40px;
+	left: 24%;
+	animation: suspention 1s linear infinite;
+}
+@keyframes road {
+	100%{transform: translateX(-2950px);}
+}
+@keyframes suspention {
+	100%{
+		transform: translateY(-2px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-2px);
+	}
+}
